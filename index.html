@@ -1,0 +1,250 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Paws Dog Walking</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7fbff;
+            color: #243447;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4facfe, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: white;
+            color: #168de2;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #243447;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .highlight {
+            background: #eaf7ff;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact-box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .contact-box p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #243447;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 38px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>🐕 Happy Paws</h1>
+        <p>Friendly, caring dog walking for your furry friends.</p>
+        <a class="button" href="#contact">Request a Walk</a>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">🐾 About Me</h2>
+
+        <p class="about">
+            I provide friendly and responsible dog walking for local families.
+            Every walk is focused on giving your dog exercise, attention, and a
+            fun time outdoors.
+        </p>
+    </section>
+
+    <section id="services" class="highlight">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🐕</div>
+                <h3>30-Minute Walk</h3>
+                <p>A fun walk around the neighborhood.</p>
+                <div class="price">$10</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌳</div>
+                <h3>60-Minute Walk</h3>
+                <p>A longer walk for dogs who need more exercise.</p>
+                <div class="price">$18</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">🐾</div>
+                <h3>Custom Walk</h3>
+                <p>Need something different? Contact me!</p>
+                <div class="price">Ask</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">📩 Request a Walk</h2>
+
+        <div class="contact-box">
+            <p>Interested in booking a walk?</p>
+            <p><strong>Email:</strong> YOUR-EMAIL-HERE</p>
+
+            <br>
+
+            <a class="button" href="mailto:YOUR-EMAIL-HERE">
+                Email Me
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>🐾 Happy Paws Dog Walking</p>
+        <p>© 2026 Happy Paws</p>
+    </footer>
+
+</body>
+</html>
+```
